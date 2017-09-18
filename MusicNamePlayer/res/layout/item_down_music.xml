@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:color/transparent"
+       >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_launcher"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:id="@+id/ll_infor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_show_pwd"
+            android:orientation="vertical"
+            android:textColor="@android:color/black" >
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="音乐.mp3"
+                android:textColor="@android:color/holo_purple"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_music_player"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 android:layout_marginLeft="10dp"
+                android:text="谭咏麟"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/checkName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null" 
+            android:visibility="gone"/>
+    </LinearLayout>
+
+</LinearLayout>

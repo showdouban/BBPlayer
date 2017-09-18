@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gif="http://schemas.android.com/apk/res/com.example.musicname"
+    xmlns:lrc="http://schemas.android.com/apk/res/com.example.musicname"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+ <com.base.TypegifView
+        android:id="@+id/gifView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        gif:delay="1"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        gif:src="@raw/laopo"
+        gif:stop="true" 
+        android:visibility="gone">
+    </com.base.TypegifView>
+    <LinearLayout
+        android:layout_below="@+id/gifView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:visibility="gone"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:visibility="gone"
+            android:text="开始" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginRight="50dp"
+            android:visibility="gone"
+            android:text="停止" />
+    </LinearLayout>
+	<RelativeLayout 
+	    android:id="@+id/layout_one"
+	    android:layout_width="250dp"
+	    android:layout_height="250dp"
+	    android:layout_centerInParent="true">
+      
+        <com.base.CircleImageView  
+        android:id="@+id/info"  
+        android:layout_width="250dp"  
+        android:layout_height="250dp"  
+        android:src="@drawable/game_disc"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop"/>   
+    <com.base.CircleImageView  
+        android:id="@+id/infoOperating"  
+        android:layout_width="115dp"  
+        android:layout_height="115dp"  
+        android:src="@drawable/qq"  
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop"/>  
+   </RelativeLayout>
+
+   <ImageView
+       android:id="@+id/check"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentRight="true"
+       android:layout_alignParentTop="true"
+       android:layout_marginRight="29dp"
+       android:layout_marginTop="108dp"
+       android:src="@drawable/index_pin" />
+    
+</RelativeLayout>
